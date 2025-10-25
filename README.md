@@ -2,6 +2,23 @@
 
 This Python script creates interactive form fields in PDF documents. It can intelligently analyze PDF content using Claude AI to automatically suggest where form fields should be placed, or you can manually specify field positions.
 
+## 🎬 Try the Demo!
+
+Want to see it in action? Check out our [interactive demo](DEMO.md) that shows the before/after of adding form fields:
+
+```bash
+# Generate a sample form (static, no fields)
+python3 create_demo_form.py
+
+# Add 17 interactive fields to make it fillable
+python3 add_fields_to_demo.py
+
+# Compare the before/after versions
+python3 compare_demo_pdfs.py
+```
+
+This creates **demo_form_before.pdf** (static) and **demo_form_after.pdf** (interactive with 17 fillable fields). Open both to see the difference!
+
 ## Features
 
 - 🤖 **LLM-Powered Field Suggestions**: Uses Claude to intelligently analyze PDFs and suggest field placements
